@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Centered Divs with Image and Text</title>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: black;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .right-div {
+        padding: 20px;
+        text-align: left;
+    }
+
+    .image-container img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+    
+    h1, p {
+        color: white; /* Change this to the desired color */
+    }
+
+    /* Adjustments for smaller screens */
+    @media (max-width: 768px) {
+        .container {
+            flex-direction: column;
+        }
+
+        .right-div {
+            margin-top: 20px;
+        }
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="left-div">
+            <div class="image-container">
+                <img src="https://github.com/Kenneth10112/Stellar-Pirate-MMS/raw/main/logo.png" alt="Placeholder Image" style="width:200px;height:200px;;">
+            </div>
+        </div>
+        <div class="right-div">
+            <h1>Log In Complete</h1>
+			<p>You can now go back to the Stellar pirate application</p>
+        </div>
+    </div>
+</body>
+</html>
